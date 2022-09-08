@@ -25,6 +25,6 @@
 2. Нарисована блок-схема алгоритма с учётом использования вызываемых методов
 
 <!-- ![Блок-схема](./img/scheme.jpg) -->
-<img src="./img/scheme.jpg" width="25%">
-<img src="./img/scheme.jpg" width="25%">
+
+<img src="./img/scheme.jpg" width="25%"> <img src="./img/scheme.jpg" width="25%">
 <img src="./img/scheme.jpg" width="25%">
