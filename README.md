@@ -17,3 +17,14 @@
 > `["hello", "2", "world", ":-)"]` -> `["2", ":-)"]`
 
 > `["1234", "1567", "-2", computer science"]` -> `["-2"]`
+
+### **Решение :**
+
+1. Создан репозиторий по адресу: https://github.com/SemyIgor/ResultWork_01.git
+
+2. Нарисована блок-схема алгоритма с учётом использования вызываемых методов
+
+<!-- ![Блок-схема](./img/scheme.jpg) -->
+<img src="./img/scheme.jpg" width="25%">
+<img src="./img/scheme.jpg" width="25%">
+<img src="./img/scheme.jpg" width="25%">
