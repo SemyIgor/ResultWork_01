@@ -8,21 +8,14 @@
 
 void Form3SymbolArray()
 {
-   // string[] initArray = new string[]
-   // {
-   //    "1234", "1567", "-2", "computer science"
-   // };
-
    Console.Clear();
-   // Initial array is apearing here
-   // string[] initArray = new string[]
-   // {
-   //    "hello", "2", "world", ":-)"
-   // };
 
+   // Initial array is here
    string[] initArray = new string[]
    {
-      "Russia", "Denmark", "Kazan"
+      "Russia", "Denmark", "Kazan", ""
+      ,"hello", "2", "", "world", ":-)"
+      // ,"1234", "1567", "-2", "computer science"
    };
 
    // Forms the array by conditions
@@ -43,6 +36,7 @@ string[] FormResultArray(string[] initialArray)
    // Fills a temporary array with data according to the required conditions
    while (i < initialArray.Length)
    {
+      // Checks the length of the array item is not greater then a maxElemLength {3} and is not equal 0
       if ((initialArray[i].Length <= maxElemLength) && (initialArray[i].Length != 0))
       {
          tmpArray[counter] = initialArray[i];
@@ -51,7 +45,7 @@ string[] FormResultArray(string[] initialArray)
       i++;
    }
 
-   // Fills a result array with data from the temporary array
+   // Creates and fills a result array with data from the temporary array
    i = 0;
    string[] resultArray = new string[counter];
    while (i < counter)
@@ -65,15 +59,28 @@ string[] FormResultArray(string[] initialArray)
 // Prints array of the strings
 void OutputArray(string[] array)
 {
-   Console.Write("["); // Prints opening bracket
    int i = 0;
+   int arrLength = array.Length;
+   int arrLengthDecr = arrLength - 1; // Array length without last element
+
+   Console.Write("["); // Prints an opening bracket
+
    // Prints all elements of an array in a loop except the last one.
-   while (i < array.Length - 1)
+   if (arrLength > 0)
    {
-      Console.Write("\"{0}\", ", array[i]);
-      i++;
+      while (i < arrLengthDecr)
+      {
+         Console.Write("\"{0}\", ", array[i]);
+         i++;
+      }
+      // Prints a last element of an array and a closing bracket if the array is not empty 
+      Console.Write("\"{0}\"]", array[i]);
    }
-   Console.Write("\"{0}\"]", array[i]);
+   else
+   // Prints an closing bracket if the array is empty 
+   {
+      Console.Write("]");
+   }
 }
 
 Form3SymbolArray(); // Starts the main method
