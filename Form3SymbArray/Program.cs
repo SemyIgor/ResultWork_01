@@ -11,7 +11,7 @@ void Form3SymbolArray()
    Console.Clear();
 
    // Gets initial array
-   string[] initArray = inputArray();
+   string[] initArray = InputArray();
 
    // Forms the array by conditions
    string[] resultArray = FormResultArray(initArray);
@@ -79,11 +79,11 @@ void OutputArray(string[] array)
 }
 
 // Inputs an array
-string[] inputArray()
+string[] InputArray()
 {
    string[] initArray = new string[]
-   {"Russia", "Denmark", "Kazan", ""};
-   // {"hello", "2", "", "world", ":-)"};
+   // {"Russia", "Denmark", "Kazan", ""};
+   {"hello", "2", "", "world", ":-)"};
    // {"1234", "1567", "-2", "computer science"};
    return initArray;
 }
