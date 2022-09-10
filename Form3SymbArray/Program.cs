@@ -10,13 +10,8 @@ void Form3SymbolArray()
 {
    Console.Clear();
 
-   // Initial array is here
-   string[] initArray = new string[]
-   {
-      "Russia", "Denmark", "Kazan", ""
-      ,"hello", "2", "", "world", ":-)"
-      // ,"1234", "1567", "-2", "computer science"
-   };
+   // Gets initial array
+   string[] initArray = inputArray();
 
    // Forms the array by conditions
    string[] resultArray = FormResultArray(initArray);
@@ -81,6 +76,16 @@ void OutputArray(string[] array)
    {
       Console.Write("]");
    }
+}
+
+// Inputs an array
+string[] inputArray()
+{
+   string[] initArray = new string[]
+   {"Russia", "Denmark", "Kazan", ""};
+   // {"hello", "2", "", "world", ":-)"};
+   // {"1234", "1567", "-2", "computer science"};
+   return initArray;
 }
 
 Form3SymbolArray(); // Starts the main method
